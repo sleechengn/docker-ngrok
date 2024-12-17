@@ -1,5 +1,7 @@
 NGROK 映射公网
 
+查看页面 http://ip:3999
+
 实例
 ```
 networks:
@@ -14,7 +16,7 @@ services:
     environment:
       TOKEN: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
       URL: http://192.168.13.116:8000
-      DOMAIN: "xxxx.ngrok-free.app"  #可以不同，自动生成域名，发送到下面配置的邮箱
+      DOMAIN: "xxxx.ngrok-free.app"  #可以不用，自动生成域名，发送到下面配置的邮箱
       SMTP_HOST: "smtp.qq.com"
       SMTP_PORT: "587"
       SMTP_USER: "xxxxxx@qq.com"
